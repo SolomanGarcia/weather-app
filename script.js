@@ -33,7 +33,12 @@ getWeatherData = (city) => {
 searchCity = () => {
   const city = document.getElementById('city-input').value;
   // CODE GOES HERE
+  getWeatherData(city)
+    .then((response) => {
 
+    }).catch((error) => {
+      console.log(error);
+    });
 }
 
 /**
